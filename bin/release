@@ -1,11 +1,9 @@
 #!/bin/sh
 
 BUILD_DIR=$1
-
-echo "BUILD DIR of release is\n"
 echo "$BUILD_DIR"
 
-cat <<EOF
+cat << EOF
 ---
 config_vars:
   JAVA_OPTS: -Xmx384m -Xss512k -XX:+UseCompressedOops
