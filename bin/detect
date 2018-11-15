@@ -1,7 +1,8 @@
 #!/bin/sh
 
 BUILD_DIR=$1
-
+echo "Build dir of detect is\n"
+echo "$BUILD_DIR"
 # This pack is valid for apps with a sonar-application-*.jar in lib folder
 if [ -f ${BUILD_DIR}/lib/sonar-application-*.jar ]; then
   echo "SonarQubeFramework"

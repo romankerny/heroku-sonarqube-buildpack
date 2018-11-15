@@ -2,6 +2,9 @@
 
 BUILD_DIR=$1
 
+echo "BUILD DIR of release is\n"
+echo "$BUILD_DIR"
+
 cat <<EOF
 ---
 config_vars:

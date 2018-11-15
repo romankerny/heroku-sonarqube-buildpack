@@ -2,10 +2,9 @@
 
 # Absolute path
 BIN_DIR=$(cd $(dirname $0) && pwd)
-echo "$BIN_DIR"
 
+echo "Build dir of compile is:\n"
 BUILD_DIR=$1
-
 echo "$BUILD_DIR"
 
 echo "-----> Create setupSonar.sh"
