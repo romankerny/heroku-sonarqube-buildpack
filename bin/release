@@ -7,5 +7,5 @@ cat <<EOF
 config_vars:
   JAVA_OPTS: -Xmx384m -Xss512k -XX:+UseCompressedOops
 default_process_types:
-  web: sh ${BUILD_DIR}/setupSonar.sh
+  web: bash ${BUILD_DIR}/setupSonar.sh
 EOF
