@@ -11,12 +11,4 @@ echo "$BUILD_DIR"
 echo "-----> Create setupSonar.sh"
 cp ${BIN_DIR}/../setupSonar.sh ${BUILD_DIR}/setupSonar.sh
 chmod 777 ${BUILD_DIR}/setupSonar.sh
-chmod 777 ${BUILD_DIR}/sesadsadsar.sh
-
-FILE = ${BUILD_DIR}/setupSonar.sh
-if [ -f $FILE ]; then
-   echo "File $FILE exists."
-else
-   echo "File $FILE does not exist."
-fi
 
