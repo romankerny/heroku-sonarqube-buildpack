@@ -3,7 +3,7 @@
 cat << EOF
 ---
 config_vars:
-  JAVA_OPTS: -Xmx384m -Xss512k -XX:+UseCompressedOops
+  ES_JAVA_OPTS: -Xmx384m -Xss512k -XX:+UseCompressedOops
 default_process_types:
   web: ./setupSonar.sh
 EOF
