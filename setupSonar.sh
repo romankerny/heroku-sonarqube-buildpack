@@ -17,6 +17,8 @@ sed -i -e "s/@DB_URL@/${databaseUrlEscaped}/g" ./conf/sonar.properties
 echo "------------------------------------------------------" > ./logs/sonar.log
 
 echo "-----> Start sonar.sh restart"
+mkdir elasticsearch/plugins
+
 ./bin/linux-x86-64/sonar.sh restart
 
 echo "-----> Start loging"
